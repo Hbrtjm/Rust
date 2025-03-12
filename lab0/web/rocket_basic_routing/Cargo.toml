@@ -5,3 +5,11 @@ edition = "2024"
 
 [dependencies]
 rocket = { version = "0.5.1", features = ["json"] }
+
+[dependencies.rocket_dyn_templates]
+version = "0.2.0"
+features = ["handlebars", "tera", "minijinja"]
+
+[[bin]]
+name="server"
+path="src/rocket_science.rs"
